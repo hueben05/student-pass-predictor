@@ -11,6 +11,8 @@ student_data = [
     [5, 85, 86, 87, 1]
 ]
 
+#Step 3: Convert to DataFrame
+
 data = pd.DataFrame(student_data, columns=[
     "study_hours",
     "attendance_percent",
@@ -20,5 +22,10 @@ data = pd.DataFrame(student_data, columns=[
 ])
 
 print(data)
+
+#Step 4: Split into features and labels
+
+label_y = data["passed"]
+features_X = data.drop("passed", axis = 1)
 
 print("Project setup complete.")
