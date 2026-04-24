@@ -18,4 +18,4 @@ This project uses machine learning to predict whether a student will pass or fai
 - Decision thresholds
 
 ## Status
-In progress
+Structured dataset and separated features (X) and label (y) for model training
