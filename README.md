@@ -11,7 +11,7 @@ This project uses machine learning to predict whether a student will pass or fai
 ## Model
 - Logistic Regression (scikit-learn)
 
-## Status
+## Current Progress
 + Created dataset
 + Structured data using pandas
 + Split data into features (X) and label (y)
