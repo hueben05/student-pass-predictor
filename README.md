@@ -18,4 +18,8 @@ This project uses machine learning to predict whether a student will pass or fai
 - Decision thresholds
 
 ## Status
-Structured dataset and separated features (X) and label (y) for model training
++ Created dataset
++ Structured data using pandas
++ Split data into features (X) and label (y)
++ Performed train/test split
++ Trained a Logistic Regression model
