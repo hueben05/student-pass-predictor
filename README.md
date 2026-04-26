@@ -11,15 +11,15 @@ This project uses machine learning to predict whether a student will pass or fai
 ## Model
 - Logistic Regression (scikit-learn)
 
-## What I'm Learning
-- Data preprocessing
-- Model training and evaluation
-- Accuracy, precision, recall
-- Decision thresholds
-
 ## Status
 + Created dataset
 + Structured data using pandas
 + Split data into features (X) and label (y)
 + Performed train/test split
 + Trained a Logistic Regression model
+
+## What I Learned
++ How to structure data for machine learning (features vs labels)
++ How to split data into training and testing sets
++ Why models should not be trained and tested on the same data
++ How to train a Logistic Regression model using scikit-learn
