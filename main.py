@@ -34,3 +34,14 @@ X_train, X_test, y_train, y_test = train_test_split(features_X, label_y, test_si
 # Step 6: Train model
 model = LogisticRegression()
 model.fit(X_train, y_train)
+
+# Step 7: Make predictions
+predictions = model.predict(X_test)
+
+# Step 8: Evaluate model
+from sklearn.metrics import accuracy_score
+accuracy = accuracy_score(y_test, predictions)
+
+print("Predictions:", predictions)
+print("Actual:", y_test.values)
+print("Accuracy:", accuracy)
