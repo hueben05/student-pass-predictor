@@ -18,6 +18,7 @@ This project uses machine learning to predict whether a student will pass or fai
 + Performed train/test split
 + Trained a Logistic Regression model
 + Generated predictions and evaluated accuracy
++ Building a Flask web app to allow users to input student data and get predictions in real time
 
 ## Results
 
