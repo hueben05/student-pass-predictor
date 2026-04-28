@@ -11,6 +11,11 @@ This project uses machine learning to predict whether a student will pass or fai
 ## Model
 - Logistic Regression (scikit-learn)
 
+## Web App
+- Users can input study hours, attendance, homework, and quiz scores  
+- The Flask app sends this data to the trained model  
+- The model returns a pass/fail prediction displayed on the same page
+  
 ## Current Progress
 + Created dataset
 + Structured data using pandas
@@ -18,7 +23,7 @@ This project uses machine learning to predict whether a student will pass or fai
 + Performed train/test split
 + Trained a Logistic Regression model
 + Generated predictions and evaluated accuracy
-+ Building a Flask web app to allow users to input student data and get predictions in real time
++ Built a Flask web app that allows users to input student data and get predictions in real time
 
 ## Results
 
@@ -38,4 +43,24 @@ This project uses machine learning to predict whether a student will pass or fai
 + Why models should not be trained and tested on the same data
 + How to train a Logistic Regression model using scikit-learn
 + How to make predictions on new data and evaluate model accuracy  
-+ The importance of having enough data, since small datasets can give misleading results  
++ The importance of having enough data, since small datasets can give misleading results
+
+## How to Run
+
+1. Install required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Run the Flask app:
+
+```bash
+python app.py
+```
+
+3. Open your browser and go to:
+
+```text
+http://127.0.0.1:5000
+```
