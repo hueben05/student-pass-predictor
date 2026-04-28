@@ -1,0 +1,13 @@
+<h1>Student Pass Predictor</h1>
+<form action="/predict" method="POST"> 
+    <!--When the user clicks submit, send the data to /predict-->
+    <!--POST sends data hidden-->
+    <p>Study Hours: <input type="number" name = "study_hours"></p>
+    <p>Attendance: <input type="number" name = "attendance"></p>
+    <p>Homework: <input type="number" name = "homework"></p>
+    <p>Quiz: <input type="number" name = "quiz"></p>
+    <button>Predict</button>
+</form>
+{% if result %} <!-- If result exists then show it-->
+    <h2>{{result}}</h2>
+{% endif %} <!-- If it doesn't exist then show nothing-->
