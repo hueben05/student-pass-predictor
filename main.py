@@ -1,23 +1,26 @@
-# Student Pass Predictor
-
-# Step 1: Import libraries
 import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
 
-# Step 2: Create dataset
-
+# Dataset
 student_data = [
     [8, 100, 100, 90, 1],
     [3, 50, 62, 70, 0],
     [5, 85, 86, 87, 1],
-    [7,95, 98, 88, 1],
-    [2,51,33,65,0],
-    [6,75,82,80,1],
-    [9,96,88,68,1],
-    [1,80,78,100,0]
+    [7, 95, 98, 88, 1],
+    [2, 51, 33, 65, 0],
+    [6, 75, 82, 80, 1],
+    [9, 96, 88, 68, 1],
+    [1, 80, 78, 100, 0],
+    [1, 30, 50, 50, 0],
+    [0, 40, 30, 45, 0],
+    [2, 60, 55, 58, 0],
+    [4, 70, 65, 60, 0],
+    [3, 80, 60, 55, 0]
 ]
 
-#Step 3: Convert to DataFrame
-
+# Convert to DataFrame
 data = pd.DataFrame(student_data, columns=[
     "study_hours",
     "attendance_percent",
@@ -26,27 +29,25 @@ data = pd.DataFrame(student_data, columns=[
     "passed"
 ])
 
-print(data)
-
-#Step 4: Split into features and labels
-
+# Split into features and label
+features_X = data.drop("passed", axis=1)
 label_y = data["passed"]
-features_X = data.drop("passed", axis = 1)
 
-# Step 5: Train/test split
-X_train, X_test, y_train, y_test = train_test_split(features_X, label_y, test_size=0.33, random_state=42)
+# Train/test split
+X_train, X_test, y_train, y_test = train_test_split(
+    features_X, label_y, test_size=0.33, random_state=42
+)
 
-# Step 6: Train model
+# Train model
 model = LogisticRegression()
 model.fit(X_train, y_train)
 
-# Step 7: Make predictions
-predictions = model.predict(X_test)
+# Evaluate model (only runs when main.py is executed directly)
+if __name__ == "__main__":
+    predictions = model.predict(X_test)
 
-# Step 8: Evaluate model
-from sklearn.metrics import accuracy_score
-accuracy = accuracy_score(y_test, predictions)
+    print("Predictions:", predictions)
+    print("Actual:", y_test.values)
 
-print("Predictions:", predictions)
-print("Actual:", y_test.values)
-print("Accuracy:", accuracy)
+    accuracy = accuracy_score(y_test, predictions)
+    print("Accuracy:", accuracy)
