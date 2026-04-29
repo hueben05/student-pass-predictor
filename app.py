@@ -16,9 +16,15 @@ def predict():
 
     # Make prediction
     prediction = model.predict(input_data)
+    probabilities = model.predict_proba(input_data)
 
     # Convert prediction to readable result
-    result = "Pass" if prediction[0] == 1 else "Fail"
+    if prediction[0] == 1:
+        confidence = (probabilities[0][1]) * 100
+        result = f"Pass {confidence:.2f}%"
+    else:
+        confidence = (probabilities[0][0]) * 100
+        result = f"Fail {confidence:.2f}%"
 
     return render_template("index.html", result=result)
 
