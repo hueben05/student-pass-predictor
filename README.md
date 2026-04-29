@@ -33,7 +33,8 @@ This project uses machine learning to predict whether a student will pass or fai
 
 ## Notes
 
-- This is a small, prototype dataset, so the high accuracy isn’t fully reliable yet  
+- This is a small, prototype dataset, so the high accuracy isn’t fully reliable yet
+- The dataset has been expanded with additional edge cases and mixed-performance examples to improve model behavior
 - With more data, the model would give more realistic and consistent results  
 - A next step would be expanding the dataset and improving how well the model generalizes to new students
 
