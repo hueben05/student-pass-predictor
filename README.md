@@ -29,7 +29,8 @@ This project uses machine learning to predict whether a student will pass or fai
 
 - The model is able to predict whether a student will pass or fail based on their data  
 - It currently gets about **100% accuracy**, but this is on a very small test set  
-- This project walks through the full machine learning process: from creating data, to training a model, to making predictions, and checking results  
+- This project walks through the full machine learning process: from creating data, to training a model, to making predictions, and checking results
+- The app also displays the model’s confidence percentage alongside each prediction    
 
 ## Notes
 
@@ -45,6 +46,7 @@ This project uses machine learning to predict whether a student will pass or fai
 - How to train a Logistic Regression model using scikit-learn
 - How to make predictions on new data and evaluate model accuracy  
 - The importance of having enough data, since small datasets can give misleading results
+- How to use prediction probabilities to show how confident the model is in its output  
 
 ## How to Run
 
