@@ -39,12 +39,12 @@ This project uses machine learning to predict whether a student will pass or fai
 - A next step would be expanding the dataset and improving how well the model generalizes to new students
 
 ## What I Learned
-+ How to structure data for machine learning (features vs labels)
-+ How to split data into training and testing sets
-+ Why models should not be trained and tested on the same data
-+ How to train a Logistic Regression model using scikit-learn
-+ How to make predictions on new data and evaluate model accuracy  
-+ The importance of having enough data, since small datasets can give misleading results
+- How to structure data for machine learning (features vs labels)
+- How to split data into training and testing sets
+- Why models should not be trained and tested on the same data
+- How to train a Logistic Regression model using scikit-learn
+- How to make predictions on new data and evaluate model accuracy  
+- The importance of having enough data, since small datasets can give misleading results
 
 ## How to Run
 
