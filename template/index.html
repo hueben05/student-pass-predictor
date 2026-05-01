@@ -8,6 +8,8 @@
     <p>Quiz: <input type="number" name = "quiz"></p>
     <button>Predict</button>
 </form>
-{% if result %} <!-- If result exists then show it-->
-    <h2>{{result}}</h2>
+{% if "Pass" in result %}
+    <h2 style="color: green;">{{ result }}</h2>
+{% else %}
+    <h2 style="color: red;">{{ result }}</h2>
 {% endif %} <!-- If it doesn't exist then show nothing-->
