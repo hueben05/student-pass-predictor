@@ -50,6 +50,7 @@ This project uses machine learning to predict whether a student will pass or fai
 - The importance of having enough data, since small datasets can give misleading results
 - How to use prediction probabilities to show how confident the model is in its output
 - How to use simple conditions in HTML to change how results look based on what the model predicts
+- How increasing the size and variety of the dataset helped show where the model makes mistakes and gave a more honest view of its performance
 
 ## How to Run
 
