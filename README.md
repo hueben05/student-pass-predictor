@@ -31,7 +31,8 @@ This project uses machine learning to predict whether a student will pass or fai
 - It currently gets about **100% accuracy**, but this is on a very small test set  
 - This project walks through the full machine learning process: from creating data, to training a model, to making predictions, and checking results
 - The app also displays the model’s confidence percentage alongside each prediction
-- The app uses color to make results easier to read, showing pass in green and fail in red    
+- The app uses color to make results easier to read, showing pass in green and fail in red
+- After expanding the dataset, the model achieved ~94% accuracy on a more complex and realistic test set    
 
 ## Notes
 
